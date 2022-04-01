@@ -39,11 +39,13 @@
                         </a>
                     </span>
                     {{ end }}
+                    {{ if .Params.featured }}
                     <span class="float-end">
-                        <a class="btn btn-sm" href="{{ .RelPermalink }}">
-                            Know more
+                        <a class="btn btn-sm" href="{{ .Params.featured.link }}" target="_blank">
+                            {{ .Params.featured.name }}
                         </a>
                     </span>
+                    {{ end }}
                 </div>
             </div>
         </div>

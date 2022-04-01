@@ -22,6 +22,7 @@
     overflow: hidden;
     border-radius: 1rem;
     border: none !important;
+    max-height: 30em;
 }
 
 #projects .card:hover {
@@ -61,4 +62,22 @@
 
 #projects .float-end .btn:focus {
     box-shadow: none !important;
+}
+
+/* pagination */
+#projects ul li a {
+    transition: none;
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
+}
+
+#projects ul li a:focus {
+    box-shadow: none;
+}
+
+#projects .page-item.active .page-link {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
 }
