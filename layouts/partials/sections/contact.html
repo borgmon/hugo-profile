@@ -15,6 +15,11 @@
                         </a>
                     </div>
                     {{ end }}
+                    {{ if .Site.Params.contact.emailImage }}
+                    <div class="text-center pt-3 mx-auto email-img">
+                        <img class="img-fluid" src="{{.Site.Params.contact.emailImage}}" alt="email">
+                    </div>
+                    {{ end }}
                 </div>
             </div>
         </div>
